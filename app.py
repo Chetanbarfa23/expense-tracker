@@ -10,7 +10,7 @@ from extensions import db
 # =====================================
 
 app = Flask(__name__)
-print("CI/CD TEST SUCCESS")
+
 # =====================================
 # ENABLE CORS
 # =====================================
