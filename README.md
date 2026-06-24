@@ -15,8 +15,6 @@ This project demonstrates deployment of a Flask-based Expense Tracker Backend wi
 - Kubernetes Deployment
 - AWS EC2 Hosting
 
-This project demonstrates deployment of a Flask-based Expense Tracker Backend with MySQL on AWS EC2 using Terraform, Docker, Docker Hub and Kubernetes.
-
 ## Tech Stack
 
 - Python
