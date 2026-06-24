@@ -1,6 +1,9 @@
 # Expense Tracker Backend | AWS, Terraform, Docker, Kubernetes & MySQL
 
 ## Project Overview
+
+This project demonstrates deployment of a Flask-based Expense Tracker Backend with MySQL on AWS EC2 using Terraform, Docker, Docker Hub and Kubernetes.
+
 ## Features
 
 - JWT Authentication
