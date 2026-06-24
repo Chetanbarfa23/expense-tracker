@@ -6,8 +6,12 @@ __pycache__/
 venv/
 myenv/
 
+# Environment files
+.env
+
 # Logs
 *.log
+flask.log
 
 # Mac
 .DS_Store
