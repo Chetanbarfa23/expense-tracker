@@ -1,0 +1,30 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: expense_tracker
+      MYSQL_USER: expenseuser
+      MYSQL_PASSWORD: Expense@123
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  backend:
+    image: chetan8889/expense-tracker:latest
+    container_name: expense-tracker
+    restart: always
+    depends_on:
+      - mysql
+    environment:
+      DATABASE_URL: mysql+pymysql://expenseuser:Expense%40123@mysql:3306/expense_tracker
+      SECRET_KEY: secret123
+      JWT_SECRET_KEY: chetan_super_secure_jwt_secret_key_2026
+    ports:
+      - "5001:5001"
+
+volumes:
+  mysql_data:

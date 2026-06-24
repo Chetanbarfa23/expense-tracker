@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environments
+venv/
+myenv/
+
+# Logs
+*.log
+
+# Mac
+.DS_Store
+
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+
+# VS Code
+.vscode/
+
+# Temp files
+tempCodeRunnerFile.py
